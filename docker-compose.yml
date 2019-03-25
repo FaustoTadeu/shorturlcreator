@@ -1,0 +1,29 @@
+version: '2.2'
+services:
+  shorturlcreation:
+    image: shorturlcreation
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    networks:
+      default:
+        ipv4_address: 172.21.0.2
+        aliases:
+          - shorturl
+    ports:
+      - 8100:8100
+  gatheringstatistics:
+    image: gatheringstatistics
+    build: ../gatheringstatistics
+    networks:
+      default:
+        ipv4_address: 172.21.0.3
+    ports:
+      - 8080:8080
+networks:
+  default:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.21.0.0/16
+          gateway: 172.21.0.1
