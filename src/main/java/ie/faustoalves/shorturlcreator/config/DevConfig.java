@@ -1,6 +1,6 @@
-package ie.com.faustoalves.shorturlcreation.config;
+package ie.faustoalves.shorturlcreator.config;
 
-import ie.com.faustoalves.shorturlcreation.service.DBService;
+import ie.faustoalves.shorturlcreator.service.DBService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;

@@ -1,7 +1,7 @@
 package ie.faustoalves.shorturlcreator.service;
 
-import ie.com.faustoalves.shorturlcreation.model.CreateUrl;
-import ie.com.faustoalves.shorturlcreation.repository.CreateUrlRepository;
+import ie.faustoalves.shorturlcreator.model.CreateUrl;
+import ie.faustoalves.shorturlcreator.repository.CreateUrlRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
